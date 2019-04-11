@@ -31,7 +31,7 @@ within failure zone (kips/ft^3): '))
 c_a=c
 A_e=B*W
 m=float((2+B/W)/(1+B/W))
-T=float(Q*tan(radians(phi))+A_e*c_a)
+T=float(Q*sin(radians(delta)))
 H=B*tan(radians(45+(radians(phi)/2)))
 
 sigma_D=float(input('\nEnter \u03C3\'_D, effective soil or surcharge pressure at the \
@@ -82,4 +82,5 @@ for i in range(0,3):
     q_a=q_u/3
     myFile.write(str('q_a = q_u / 3\n'))
     myFile.write(str('%.2f'%(q_a))+' = '+str('%.2f'%(q_u))+ '/ 3\n')
+    myFile.write(str('T = ' TL+' Tsliding = ' float(Q*tan(radians(phi))+A_e*c_a)
 myFile.close()

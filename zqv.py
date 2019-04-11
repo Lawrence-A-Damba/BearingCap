@@ -5,7 +5,7 @@ def zqv(Q,B,W,D,c,beta,delta,phi):
     c_a=c
     A_e=B*W
     m=(2+(B/W))/(1+(B/W))
-    T=Q*tan(radians(phi))+A_e*c_a
+    T=Q*sin(radians(delta))
     if D/B<=1:
         k=D/B
     else:
