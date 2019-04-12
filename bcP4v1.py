@@ -82,5 +82,5 @@ for i in range(0,3):
     q_a=q_u/3
     myFile.write(str('q_a = q_u / 3\n'))
     myFile.write(str('%.2f'%(q_a))+' = '+str('%.2f'%(q_u))+ '/ 3\n')
-    myFile.write('T = '+str('%.2f'%T)+' Tsliding = '+str(float(Q*tan(radians(phi))+A_e*c_a)))
+    myFile.write('\nT = '+str('%.2f'%T)+'\t Tsliding = '+str('%.2f'%float(Q*tan(radians(phi))+A_e*c_a)))
 myFile.close()
